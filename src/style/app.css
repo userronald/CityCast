@@ -1,0 +1,167 @@
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*
+.wrapper {
+    height:100vh;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.863);
+   
+  }
+
+.center-wrapper {
+    align-self: center;
+    justify-self: center;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    
+  }
+  .heading{
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+  }
+   */
+
+
+   body{
+    margin:0;
+    padding:0;
+    background-color: blueviolet;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+   }
+
+   .container{
+    width:350px;
+    max-height: 99vh;
+    padding:20px;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+
+   .input-container{
+    width:100%;
+    display:flex;
+    align-items: center;
+    border: 2px solid #70e6f3;
+    border-radius: 10px;
+    overflow: hidden;
+   }
+
+   .cityInput{
+    flex:1;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+   }
+
+   .search-icon{
+    padding: 10px;
+    height: 30px;
+    cursor: pointer;
+   }
+
+  
+
+   .weather-icon{
+    text-align: center;
+    height: 150px;
+    margin-bottom: 10px;
+   }
+
+   .weather-icon img{
+    width: 160px;
+    height: 160px;
+   }
+
+   .temperature,
+   .location,
+   .country{
+    margin-top:5px;
+    font-size:35px;
+    color:#333;
+    text-transform:uppercase;
+    text-align:center;
+   }
+
+   .temperature{
+    font-weight: 600;
+    font-size: 25 px;
+   }
+
+   .location{
+    color: #f89a41;
+    font-weight: 400;
+    font-size: 35px;
+   }
+   .description{
+    color:#888;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+   }
+
+   .country{
+    font-size: 16px;
+    color:#888;
+    font-weight: 500;
+   }
+   .humidity{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #22a7f7;
+    font-weight: 600;
+
+   }
+
+   .enter-city-message {
+  font-size: 1.2rem; /* Slightly larger text for better readability */
+  font-weight: 500; /* Medium weight for a professional look */
+  color: #555; /* Neutral gray for text color */
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Space from the input field */
+  padding: 10px; /* Add some padding for a clean look */
+  border: 1px solid #ddd; /* Optional border for definition */
+  border-radius: 8px; /* Smooth edges */
+  background-color: #f9f9f9; /* Subtle background for contrast */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.time {
+  font-size: 1.2rem; /* Larger text for readability */
+  color: #333; /* Neutral dark color for text */
+  text-align: left; /* Align text to the left */
+  display: flex; /* Use flexbox for better alignment */
+  align-items: center; /* Vertically align text */
+  gap: 8px; /* Space between label and value */
+  margin: 10px 0; /* Add spacing above and below */
+  background-color: #f9f9f9; /* Subtle background for contrast */
+  padding: 10px 15px; /* Add some padding for a clean look */
+  border-radius: 8px; /* Smooth edges for modern design */
+  border: 1px solid #ddd; /* Light border for definition */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.time-label {
+  font-weight: bold; /* Make the label stand out */
+  color: #555; /* Slightly lighter color for contrast */
+}
+
+.time-value {
+  font-weight: 600; /* Slightly bold for the time value */
+  color: #f75159; /* Blue color for emphasis (adjust based on your theme) */
+}
